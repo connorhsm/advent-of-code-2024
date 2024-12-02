@@ -5,7 +5,7 @@ from loguru import logger
 INPUT_FILE = "input.txt"
 
 logger.remove()
-logger.add(sys.stderr, level="DEBUG")
+logger.add(sys.stderr, level="INFO")
 
 
 def main() -> None:
