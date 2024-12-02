@@ -37,6 +37,11 @@ def test_parse_input(input, expected):
     "input_left, input_right, expected",
     [
         (
+            [195, 343, 594, 127],
+            [958, 739, 894, 273],
+            1605
+        ),
+        (
             [1, 3, 5],
             [2, 4, 6],
             3,
