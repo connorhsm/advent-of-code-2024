@@ -13,7 +13,7 @@ def main() -> None:
         read_input(INPUT_FILE),
     )
 
-    # print(f"Total distance: {do_the_first_thing(left_list, right_list)}")
+    print(f"Total distance: {do_the_first_thing(left_list, right_list)}")
     print(f"Similarity score: {do_the_second_thing(left_list, right_list)}")
 
 
