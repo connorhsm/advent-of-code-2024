@@ -38,11 +38,11 @@ def do_the_second_thing(left: list, right: list) -> int:
 
     similarity_score = 0
 
-    for l in left:
-        occurrences = right.count(l)
-        similarity = l * occurrences
+    for i in left:
+        occurrences = right.count(i)
+        similarity = i * occurrences
 
-        logger.debug(f"Left: {l} | Occurrences: {occurrences} | Similarity: {similarity}")
+        logger.debug(f"Left: {i} | Occurrences: {occurrences} | Similarity: {similarity}")
 
         similarity_score += similarity
 
