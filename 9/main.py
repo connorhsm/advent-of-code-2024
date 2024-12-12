@@ -15,6 +15,17 @@ def expand_disk_map(input: str) -> list:
 
 
 def compact_filesystem(input: list) -> list:
+    """
+    
+    Pass in a list of file blocks and free space "." and
+    return a compacted list of the file blocks without any
+    free space, according to the compacting rules.
+
+    In: [0, 0, '.', '.', '.', ... 6, 6, 6, 6, '.', 7, 7, 7, '.', 8, 8, 8, 8, 9, 9]
+    Out: [0, 0, 9, 9, 8, ... 3, 3, 3, 6, 4, 4, 6, 5, 5, 5, 5, 6, 6]
+    
+    """
+
     dot_less = [x for x in input if x != "."]
 
     result = []
