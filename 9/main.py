@@ -1,4 +1,4 @@
-def expand_disk_map(input: str) -> str:
+def expand_disk_map(input: str) -> list:
 
     result = []
     for i, digit in enumerate(input):
@@ -48,12 +48,12 @@ def read_input(filename: str) -> str:
 
 if __name__ == "__main__":
     input = read_input("input.txt")
-    print(len(input))
 
     print(
+        "Solution:",
         calculate_checksum(
             compact_filesystem(
                 expand_disk_map(input),
             )
-        )
+        ),
     )
